@@ -1,0 +1,260 @@
+<!DOCTYPE html>
+<html lang="fr">
+
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>compétences et projets - Mon Portfolio</title>
+        <!-- Mon propre fichier CSS -->
+        <link rel="stylesheet" href="styles/competences_projets.css">
+        <link rel="stylesheet" type="text/css" href ="styles/bootstrap.css"/>
+        <link rel="stylesheet" href="styles/commun.css">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+
+    </head>
+
+    <body>
+
+        <header class="slider">
+
+            <nav class="navbar navbar-expand-lg">
+                    <!-- Logo (nom et prénom) -->
+                    <a href="index.html">
+                        <img src="images/logo-png.png " id="logo" title="Logo Louise AZEM">
+                    </a> 
+                    <!-- Bouton hamburger -->
+                    <button class="navbar-toggler" id="humb" type="button">
+                        <span class="navbar-toggler-icon"></span>
+                    </button>
+        
+                    <!-- Menu -->
+                    <div class="collapse navbar-collapse" id="navbarNav">
+                        <ul class="navbar-nav">
+                            <li class="nav-item">
+                                <a class="nav-link"  href="about.html">À propos</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link " href="competences_projets.html">Compétences</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="competences_projets.html#projets">Projets</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="contact.html">Contact</a>
+                            </li>                          
+                        </ul>
+                    </div>
+
+                     <!-- Bouton mode sombre-->
+                    <div class="nav-item" class="toggle-dark-mode">
+                        <button id="dark-mode-toggle">
+                            <i id="dark-mode-icon" class="fas fa-moon nav-link"></i>
+                        </button>
+                    </div>
+        
+        
+                    <div class="Menu_deroulant" >
+                        <li class="nav-item bg-white">
+                            <a class="nav-link"  href="about.html">À propos</a>
+                        </li>
+                        <li class="nav-item bg-white">
+                            <a class="nav-link " href="competences_projets.html">Compétences</a>
+                        </li>
+                        <li class="nav-item bg-white">
+                            <a class="nav-link" href="competences_projets.html#projets">Projets</a>
+                        </li>
+                        <li class="nav-item bg-white">
+                            <a class="nav-link" href="contact.html">Contact</a>
+                        </li>                      
+                    </div>
+            </nav>
+        
+            
+        </header>
+
+        <main>
+            <!-- Section Compétences -->
+            <section id="competences" class="py-5">
+                <div class="container">
+                    <h2 class="text-center mb-4" >Mes Compétences</h2>
+                    <div class="row text-center">
+                        <!-- Exemple de compétence -->
+                        <div class="col-lg-4 col-6 mb-4">
+                            <div class="competence">
+                                <img src="images/html-logo.jpeg" alt="HTML html" class="img-fluid">
+                                <div class="overlay">
+                                    <div class="skill-bar">
+                                        <div class="skill-level" style="width: 50%;"></div>
+                                    </div>
+                                    <p>Niveau : 50%</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-lg-4 col-6 mb-4">
+                            <div class="competence">
+                                <img src="images/css.jpeg" alt="CSS Css css" class="img-fluid">
+                                <div class="overlay">
+                                    <div class="skill-bar">
+                                        <div class="skill-level" style="width: 50%;"></div>
+                                    </div>
+                                    <p>Niveau : 50%</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-lg-4 col-6 mb-4">
+                            <div class="competence">
+                                <img src="images/js-logo.png" alt="JavaScript" class="img-fluid">
+                                <div class="overlay">
+                                    <div class="skill-bar">
+                                        <div class="skill-level" style="width: 30%;"></div>
+                                    </div>
+                                    <p>Niveau : 30%</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-lg-4 col-6 mb-4">
+                            <div class="competence">
+                                <img src="images/java-logo.svg" alt="Java" class="img-fluid">
+                                <div class="overlay">
+                                    <div class="skill-bar">
+                                        <div class="skill-level" style="width: 50%;"></div>
+                                    </div>
+                                    <p>Niveau : 50%</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-lg-4 col-6 mb-4">
+                            <div class="competence">
+                                <img src="images/c-logo.png" alt="C c" class="img-fluid">
+                                <div class="overlay">
+                                    <div class="skill-bar">
+                                        <div class="skill-level" style="width: 70%;"></div>
+                                    </div>
+                                    <p>Niveau : 70%</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-lg-4 col-6 mb-4">
+                            <div class="competence">
+                                <img src="images/bash-logo.png" alt="bash shell" class="img-fluid">
+                                <div class="overlay">
+                                    <div class="skill-bar">
+                                        <div class="skill-level" style="width: 40%;"></div>
+                                    </div>
+                                    <p>Niveau : 40%</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-lg-4 col-6 mb-4">
+                            <div class="competence">
+                                <img src="images/OCamL-logo.jpg" alt="ocaml" class="img-fluid">
+                                <div class="overlay">
+                                    <div class="skill-bar">
+                                        <div class="skill-level" style="width: 20%;"></div>
+                                    </div>
+                                    <p>Niveau : 20%</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-lg-4 col-6 mb-4">
+                            <div class="competence">
+                                <img src="images/py-logo.jpeg" alt="Python" class="img-fluid">
+                                <div class="overlay">
+                                    <div class="skill-bar">
+                                        <div class="skill-level" style="width: 60%;"></div>
+                                    </div>
+                                    <p>Niveau : 60%</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+        
+            <!-- Section Projets -->
+            <section id="projets" class="py-5">
+                <div class="container">
+                    <h2 class="text-center mb-4">Mes Projets</h2>
+                    <div class="row text-center">
+                        <!-- Projet 1 -->
+                        <div class="col-12 col-md-6 col-lg-4 mb-4">
+                            <div class="card h-100">
+                                <img src="images/baumgartner.jpg" class="card-img-top" alt="chute de baumgartner">
+                                <div class="card-body">
+                                    <p class="card-text">Modélisation de la chute avec représentation graphique des
+                                        vitesses et des masses volumiques</p>
+                                </div>
+                                <div class="card-footer">
+                                    <a href="https://github.com/Louise4444/Chute_de_Felix_Baumgartner" class="btn btn-primary">Voir sur GitHub</a>
+                                </div>
+                                <div class="card-footer">
+                                    <a href="images/CHUTE LIBRE.pdf" class="btn btn-primary" target="_blank">Voir le diapo</a>
+                                </div>
+                            </div>
+                        </div>
+                        <!-- Projet 2 -->
+                        <div class="col-12 col-md-6 col-lg-4 mb-4">
+                            <div class="card h-100">
+                                <img src="images/automate.png" class="card-img-top" alt="automates">
+                                <div class="card-body">
+                                    <p class="card-text">Création ,déterminisation et opérations sur les automates et
+                                        la théorie des langages.</p>
+                                </div>
+                                <div class="card-footer">
+                                    <a href="https://github.com/Louise4444/Projet_Automates" class="btn btn-primary">Voir sur GitHub</a>
+                                </div>
+                            </div>
+                        </div>
+                        <!-- Projet 3 -->
+                        <div class="col-12 col-md-6 col-lg-4 mb-4">
+                            <div class="card h-100">
+                                <img src="images/ecosysteme.jpg" class="card-img-top" alt="ecosysteme">
+                                <div class="card-body">
+                                    <p class="card-text">Simulation d’un écosystème proies prédateurs
+                                        Représentation graphique et évolution du monde de
+                                        l’écosystème</p>
+                                </div>
+                                <div class="card-footer">
+                                    <a href="https://github.com/Louise4444/Projet_Ecosysteme" class="btn btn-primary">Voir sur GitHub</a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+        </main>   
+
+    </body>
+
+    <footer>
+        <div class="row">
+            <ul>
+                <li class="col-sm-2 col-4 nav-item">
+                    <a class="nav-link" href="index.html">Accueil</a>
+                </li>
+                <li class="col-sm-2 col-4 nav-item">
+                    <a class="nav-link" href="about.html">À propos</a>
+                </li>
+                <li class="col-sm-2 col-4 nav-item">
+                    <a class="nav-link" href="competences_projets.html">Compétences</a>
+                </li>
+                <li class="col-sm-2 col-4 nav-item">
+                    <a class="nav-link" href="competences_projets.html#projets">Projets</a>
+                </li>
+                <li class="col-sm-2 col-4 nav-item">
+                    <a class="nav-link" href="contact.html">Contact</a>
+                </li>
+            </ul>
+        </div>
+    
+        <div id="f">
+            <p>© 2024 Mon Portfolio. Tous droits réservés.</p>
+            <p>Site réalisé par AZEM Louise</p>
+        </div>
+    
+    </footer>
+    
+
+    <script src="script/jpp.js"></script>
+
+</html>

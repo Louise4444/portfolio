@@ -1,0 +1,212 @@
+/* Style pour l'image d'accueil principale */
+#photoacceuil {
+    width: 100%; /* L'image prend toute la largeur disponible */
+    height: 45vh; /* Hauteur définie proportionnellement à la fenêtre */
+    margin-bottom: 0.2rem; /* Espace entre cette image et le contenu suivant */
+    border-radius: 10px; /* Coins arrondis */
+    object-fit: cover; /* L'image s'ajuste sans déformation */
+    position: relative; /* Utile si des éléments enfants sont positionnés */
+}
+
+/* Fond sous l'image d'accueil */
+#fond {
+    width: 100%; /* Fond s'étend sur toute la largeur */
+    height: 100%; /* Fond occupe toute la hauteur */
+    object-fit: fill; /* Le fond s'étire pour remplir l'espace */
+    filter: brightness(50%); /* Réduit la luminosité pour mettre en valeur le texte par-dessus */
+    border-radius: 10px; /* Coin arrondis identiques à l'image */
+}
+
+/* Contenu au-dessus de l'image d'accueil */
+#contenu_photo {
+    position: absolute; /* Positionné par rapport à #photoacceuil */
+    top: 50%; /* Centré verticalement */
+    left: 50%; /* Centré horizontalement */
+    transform: translate(-50%, -50%); /* Ajustement pour un vrai centrage */
+    text-align: center; /* Texte centré */
+    font: bold italic 2rem serif; /* Style et taille de la police */
+    animation: revealText 3s forwards; /* Animation qui révèle le texte */
+    background: rgba(0, 0, 0, 0.5); /* Fond semi-transparent pour lisibilité */
+    padding: 10px; /* Espace interne autour du texte */
+    border-radius: 5px; /* Coins arrondis */
+    width: 80%; /* Largeur du texte, évite qu'il déborde */
+}
+
+/* Animation pour révéler le texte */
+@keyframes revealText {
+    0% {
+        width: 0; /* Début avec une largeur de 0 */
+    }
+    100% {
+        width: 100%; /* Fin avec une largeur complète */
+    }
+}
+
+/* Section de présentation */
+#presentation {
+    width: 100%; /* La section occupe toute la largeur */
+    height: auto; /* Hauteur adaptée au contenu */
+    background-color: #dee2c5; /* Couleur de fond douce */
+    color: #2c3e50; /* Texte sombre */
+    padding: 1.25rem; /* Espacement interne */
+    border-radius: 0.625rem; /* Coins arrondis */
+    display: flex; /* Mise en page en flexbox */
+    justify-content: space-around; /* Espace équilibré entre éléments */
+    align-items: center; /* Alignement vertical centré */
+}
+
+/* Conteneur pour la photo */
+#photo {
+    background-color: #2c3e50; /* Fond sombre */
+    padding: 0.4rem; /* Espacement interne */
+    border-radius: 10%; /* Bordures arrondies */
+    display: flex; /* Centrage des éléments en flexbox */
+    justify-content: center;
+    align-items: center;
+}
+
+/* Style pour l'image de profil */
+#pdp {
+    width: 100%; /* Image occupe tout l'espace disponible */
+    max-width: 15rem; /* Taille maximale pour éviter de trop grandir */
+    border-radius: 10%; /* Bords arrondis */
+    object-fit: fill; /* Image étirée pour remplir */
+}
+
+/* Conteneur pour l'image de profil */
+#photo_de_profil {
+    width: 100%; /* Largeur complète */
+    display: flex; /* Flexbox pour centrer l'image */
+    justify-content: center;
+    align-items: center;
+}
+
+/* Texte d'introduction */
+#intro {
+    text-align: left; /* Texte aligné à gauche */
+    max-width: 37.5rem; /* Largeur maximale */
+    padding: 0.625rem; /* Espacement interne */
+}
+
+/* Titre de l'introduction */
+#intro h2 {
+    padding-top: 0.125rem; /* Petit espacement au-dessus */
+    font-size: 3.125rem; /* Taille de police importante */
+    color: #333; /* Couleur sombre */
+    white-space: nowrap; /* Empêche le texte de passer à la ligne */
+}
+
+/* Paragraphe d'introduction */
+#intro p {
+    font-size: 1.25rem; /* Taille de texte moyenne */
+    line-height: 1.5; /* Espacement entre les lignes */
+    color: #110a0a; /* Couleur sombre */
+    margin-bottom: 1.5rem /* Espacement en dessous */
+}
+
+/* Bouton pour télécharger le CV */
+#download-cv {
+    font-size: 1.5625rem; /* Taille du bouton adaptée */
+    padding: 0.75rem 1.5625rem; /* Ajustement du padding */
+    background-color: #2c3e50; /* Couleur de fond sombre */
+    color: white; /* Texte en blanc */
+    text-decoration: none; /* Pas de soulignement */
+    border-radius: 0.3125rem; /* Coins arrondis */
+    transition: background-color 0.5s ease, transform 0.5s linear; /* Effets de transition */
+    font-weight: bold; /* Texte en gras */
+}
+
+/* Effet au survol du bouton */
+#download-cv:hover {
+    background-color: #5c5c5c; /* Fond gris au survol */
+    transform: scale(1.2);
+    color: #110a0a; /* Changement de couleur de texte */
+}
+
+/* Responsive Design : écrans de largeur entre 991px et 1515px */
+@media (min-width: 991px) and (max-width: 1515px) {
+    #presentation {
+        flex-direction: row; /* Alignement horizontal des éléments */
+        justify-content: space-around;
+    }
+
+    #intro {
+        max-width: 37.5rem; /* Largeur du texte limitée */
+        text-align: left;
+    }
+
+    #pdp {
+        width: 17.125rem; /* Taille ajustée pour l'image */
+    }
+
+    #intro h2 {
+        font-size: 2.5rem; /* Taille réduite pour les titres */
+    }
+
+    #intro p {
+        font-size: 1.125rem; /* Texte légèrement plus petit */
+    }
+
+}
+
+/* Responsive Design : écrans de largeur inférieure à 992px */
+@media (max-width: 992px) {
+    #presentation {
+        flex-direction: column; /* Alignement vertical */
+    }
+
+    #intro {
+        max-width: 90%; /* Texte s'étend presque sur toute la largeur */
+    }
+
+    #pdp {
+        width: 9.375rem; /* Taille réduite de l'image */
+    }
+
+    #intro h2 {
+        font-size: 2rem; /* Taille plus petite pour les titres */
+    }
+
+    #intro p {
+        font-size: 1rem; /* Taille réduite pour le texte */
+    }
+
+    #download-cv {
+        font-size: 1.25rem; /* Taille du bouton adaptée */
+        padding: 0.875rem 1.375rem; /* Espacement ajusté */
+    }
+}
+
+
+/* ========================================= */
+/* Mode Sombre global                       */
+/* ========================================= */
+
+
+/* Mode sombre global */
+body.dark-mode {
+    background-color: #121212;
+    color: #ffffff;
+}
+
+body.dark-mode #presentation {
+    background-color: #333;
+    color:#e0e0e0;
+}
+
+body.dark-mode #photo {
+    background-color: #a1a5a8;
+}
+
+body.dark-mode #download-cv{
+    background-color: #000000;
+}
+
+body.dark-mode #download-cv:hover {
+    background-color: #5c5c5c; /* Fond gris au survol */
+    color: white; /* Changement de couleur de texte */
+}
+
+body.dark-mode #intro p {
+    color: #faf1f1; /* Couleur sombre */
+}
